@@ -14,6 +14,13 @@ public class Usuario {
         Usuario.email = email;
     }
 
+    public synchronized static Usuario obterUsuario(){
+        if (uniqueInstance == null){
+            uniqueInstance = new Usuario(nome,cpf,tipoUsuario,email);
+        }
+        return uniqueInstance;
+    }
+
 
 
 }

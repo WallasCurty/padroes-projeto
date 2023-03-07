@@ -21,6 +21,4 @@ public class Usuario {
         return uniqueInstance;
     }
 
-
-
 }
